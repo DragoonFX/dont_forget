@@ -26,7 +26,7 @@
 
     <!-- A universally unique application identifier. Must be unique across all BlackBerry 10 applications.
          Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-    <id>chachkouski.DontForget</id>
+    <id>test.DontForget</id>
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm/o.le-v7-g/DontForget" entry="true" type="Qnx/Elf">DontForget</asset>
@@ -70,19 +70,9 @@
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <icon>
-       <image>icon_144x144.png</image>
-       <image>icon_110x110.png</image>
-       <image>icon_96x96.png</image>
-       <image>icon_90x90.png</image>
+       <image>icon_small.png</image>
     </icon>
-    <splashScreens>
-       <image>splash_1440_x_1440_2.png</image>
-       <image>splash_720_x_720.png</image>
-       <image>splash_1280_x_768.png</image>
-       <image>splash_1280_x_720.png</image>
-       <image>splash_768_x_1280.png</image>
-       <image>splash_720_x_1280.png</image>
-    </splashScreens>
+
     <authorId>gYAAgJBERbiwoSHtjskM8WvopKU</authorId>
     <author>Mikhail Chachkouski</author>
     <buildIdFile>buildnum</buildIdFile>
@@ -105,19 +95,8 @@
     <asset path="translations" dest="qm">
         <include name="*.qm"/>
     </asset>
-    <asset path="C:/Users/misha/Pictures/splash.png">splash.png</asset>
-    <asset path="E:/OneDrive/dev/DontForget/ic_launcher/icon_144x144.png">icon_144x144.png</asset>
-    <asset path="E:/OneDrive/dev/DontForget/ic_launcher/icon_110x110.png">icon_110x110.png</asset>
-    <asset path="E:/OneDrive/dev/DontForget/ic_launcher/icon_96x96.png">icon_96x96.png</asset>
-    <asset path="E:/OneDrive/dev/DontForget/ic_launcher/icon_90x90.png">icon_90x90.png</asset>
     <asset path="icon_big.png">icon_big.png</asset>
     <asset path="icon_small.png">icon_small.png</asset>
-    <asset path="E:/YandexDisk/Dev/DontForget/splash_1440_x_1440_2.png">splash_1440_x_1440_2.png</asset>
-    <asset path="E:/YandexDisk/Dev/DontForget/splash_720_x_720.png">splash_720_x_720.png</asset>
-    <asset path="E:/YandexDisk/Dev/DontForget/splash_1280_x_768.png">splash_1280_x_768.png</asset>
-    <asset path="E:/YandexDisk/Dev/DontForget/splash_1280_x_720.png">splash_1280_x_720.png</asset>
-    <asset path="E:/YandexDisk/Dev/DontForget/splash_768_x_1280.png">splash_768_x_1280.png</asset>
-    <asset path="E:/YandexDisk/Dev/DontForget/splash_720_x_1280.png">splash_720_x_1280.png</asset>
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>
@@ -132,7 +111,7 @@
     
     <!-- Need to put an invoke entry here for push -->
     <!-- The id here must match the invokeTargetID in the PushService constructor -->
-    <invoke-target id="chachkouski.DontForget.invoke.push">
+    <invoke-target id="test.DontForget.invoke.push">
       <type>application</type>
       <filter>
          <action>bb.action.PUSH</action>
@@ -142,7 +121,7 @@
     
     <!-- Have an invoke entry here for when a notification is clicked on in the BlackBerry Hub -->
   	<!-- This will cause the application to be opened -->
-    <invoke-target id="chachkouski.DontForget.invoke.open">
+    <invoke-target id="test.DontForget.invoke.open">
       <type>application</type>
       <filter>
          <action>bb.action.OPEN</action>
@@ -150,7 +129,7 @@
       </filter>
     </invoke-target>
     
-	<invoke-target id="chachkouski.DontForget.search.extended">
+	<invoke-target id="test.DontForget.search.extended">
    		<invoke-target-type>application</invoke-target-type>
    		<icon>
    			<image public="true">icon.png</image>
@@ -161,7 +140,7 @@
    		</filter>
 	</invoke-target>
 	
-	<invoke-target id="chachkouski.DontForget.search.asyoutype">
+	<invoke-target id="test.DontForget.search.asyoutype">
    		<invoke-target-type>application</invoke-target-type>
    		<icon>
    			<image public="true">icon_small.png</image>
@@ -172,7 +151,7 @@
    		</filter>
 	</invoke-target>
 	
-	<invoke-target id="chachkouski.DontForget.card.edit.text">
+	<invoke-target id="test.DontForget.card.edit.text">
   		<invoke-target-type>card.composer</invoke-target-type>
   		<icon>
   			<image public="true">icon_small.png</image>
@@ -184,7 +163,7 @@
   		</filter>
 	</invoke-target>
 	
-	<invoke-target id="chachkouski.DontForget.card.edit.uri">
+	<invoke-target id="test.DontForget.card.edit.uri">
   		<invoke-target-type>card.composer</invoke-target-type>
   		<icon>
   			<image public="true">icon_small.png</image>
